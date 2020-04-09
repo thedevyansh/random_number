@@ -67,6 +67,40 @@
 			opacity: 0.5;
 		}
 
+		.form {
+			position: absolute;
+			display: block;
+			left: 0;
+			width: 100%;
+			text-align: center;
+		}
+
+		label {
+			font-family: 'Parisienne', cursive;
+			color: white;
+			font-size: 18px;
+			opacity: 0.6;
+		}
+
+		input[type="text"] {
+			padding: 8px;
+			border: 1px solid white;
+			border-radius: 50px;
+			background-color: #20011E;
+			color: #c7c6c1;
+			font-family: 'Raleway', sans-serif;
+		}
+
+		input[type="submit"] {
+			padding: 5px 30px;
+			border: 1px solid white;
+			border-radius: 50px;
+			background-color: #20011E;
+			color: white;
+			font-family: 'Raleway', sans-serif;
+		}
+
+
 		@media only screen and (max-width: 420px)
 		{
 			.slantedDiv div {
@@ -101,6 +135,28 @@
 	<div class="instruct">
 		You've got 10 chances, kid &nbsp<i class="fa fa-magic"></i>
 	</div>
+	<br><br>
+
+	 <div class="form">
+
+      <label for="guessField">Enter a guess: </label>
+
+      <input type="text" id="guessField" class="guessField">
+
+    </div><br><br><br>
+
+    <div class="form">
+
+    	<input type="submit" value="Submit" class="guessSubmit">
+
+    </div><br>
+   
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
 
 
 </body>
