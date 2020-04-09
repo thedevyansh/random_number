@@ -11,6 +11,9 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<script src="https://use.fontawesome.com/55fc7e5b7b.js"></script>
+
+
 	<style>
 
 		html, body {
@@ -91,13 +94,49 @@
 			font-family: 'Raleway', sans-serif;
 		}
 
-		input[type="submit"] {
+		input[type="submit"], button {
 			padding: 5px 30px;
 			border: 1px solid white;
-			border-radius: 50px;
+			border-radius: 60px;
 			background-color: #20011E;
 			color: white;
 			font-family: 'Raleway', sans-serif;
+		}
+
+		button {
+			padding: 8px 30px;
+			position: absolute;
+			display: block;
+			left: 0;
+			width: 100%;
+			text-align: center;
+
+		}
+
+		.guesses, .lastResult, .lowOrHi {
+			color: white;
+			font-family: 'Raleway', sans-serif;
+			display: block;
+			text-align: center;
+		}
+
+		.lastResult {
+			margin: 0 auto;
+			padding: 5px 30px;
+			border-radius: 50px;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+		}
+
+		.lowOrHi {
+			font-size: 14px;
+		}
+
+		.slantedDiv a {
+			color: white;
+			opacity: 0.7;
+			font-family: 'Raleway', sans-serif; 
+			text-decoration: none;
 		}
 
 
@@ -121,6 +160,7 @@
 <body>
 
 	<div class = "slantedDiv">
+		<a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> &nbspHOME</a>
 
 		<div>Welcome to Dumbledore's Game.<br>
 		</div>
@@ -149,7 +189,7 @@
 
     	<input type="submit" value="Submit" class="guessSubmit">
 
-    </div><br>
+    </div><br><br><br>
    
 
     <div class="resultParas">
@@ -157,6 +197,9 @@
       <p class="lastResult"></p>
       <p class="lowOrHi"></p>
     </div>
+
+   
+    <script src="mechanism.js"></script>
 
 
 </body>
