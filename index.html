@@ -47,7 +47,7 @@
 		.slantedDiv div {
 			position: absolute;
 			display: block;
-			top: 40%;
+			top: 50%;
 			left: 0;
 			width: 100%;
 			text-align: center;
@@ -56,11 +56,6 @@
 			font-family: 'Parisienne', cursive;
 		}
 
-		span {
-            font-family: 'Raleway', sans-serif;
-            font-size: 15px;  
-            opacity: 0.7;
-		}
 
 		.instruct {
 			display: block;
@@ -70,10 +65,11 @@
 			opacity: 0.5;
 		}
 
-		@media only screen and (max-width: 600px)
+		@media only screen and (max-width: 420px)
 		{
 			.slantedDiv div {
-				font-size: 25px;
+				font-size: 28px;
+				text-align: justify;
 			}
 
 			.slantedDiv {
@@ -91,13 +87,12 @@
 	<div class = "slantedDiv">
 
 		<div>Welcome to Dumbledore's Game.<br>
-			<span>Guess a random number.</span>
 		</div>
 
 	</div>
 
 	<div class="instruct">
-		Hint: The random number is between 1 and 100 :p
+		Guess the random number! HINT: The random number is between 1 and 100 :p
 	</div>
 
 
