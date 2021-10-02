@@ -108,6 +108,7 @@ button {
     border-radius: 50px;
     letter-spacing: 5px;
     text-transform: uppercase;
+    width: 30%;
 }
 
 .lowOrHi {
