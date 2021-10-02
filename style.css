@@ -3,17 +3,23 @@ body {
   height: 100%;
   margin: 0;
   overflow-x: hidden;
-  background: #20011e;
+
+  background-color: #334756;
+}
+.heading
+{
+margin-top: 2px;
 }
 
 .slantedDiv {
   position: relative;
   width: 100%;
-  min-height: 150px;
-  background: #24152f;
+  min-height: 200px;
+  background-color:#F0A500;
   padding: 20px;
   opacity: 0.9;
   margin-bottom: 11%;
+
 }
 
 .slantedDiv:after {
@@ -27,7 +33,7 @@ body {
   bottom: 0;
   background: inherit;
   transform-origin: top left;
-  transform: skewY(6deg);
+  transform: skewY(3deg);
   z-index: -1;
 }
 
@@ -70,20 +76,22 @@ input[type='number'] {
   padding: 8px;
   border: 1px solid white;
   border-radius: 50px;
-  background-color: #20011e;
-  color: #c7c6c1;
+  color: black;
+  background-color: #FEF1E6;
   font-family: 'Raleway', sans-serif;
 }
 
 input[type='submit'],
 button {
+  margin-top: 10px;
   padding: 5px 30px;
   border: 1px solid white;
   border-radius: 60px;
-  background-color: #20011e;
-  color: white;
+   font-size: 1rem;
+  background-color: #FEF1E6;
   font-family: 'Raleway', sans-serif;
 }
+
 
 button {
   padding: 8px 30px;
@@ -92,6 +100,10 @@ button {
   left: 0;
   width: 100%;
   text-align: center;
+}
+button:hover
+{
+  color:#5C7AEA;
 }
 
 .guesses,
