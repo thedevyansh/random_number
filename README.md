@@ -1,4 +1,7 @@
 # Guess the random number
+
+![guess the random number](assets/demo.png)
+
 To contribute, checkout this project and add improvements. These improvements can be designing or functionalities.
 
 # Contribution Guide
