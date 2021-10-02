@@ -53,8 +53,10 @@ function setGameOver() {
   guessField.disabled = true;
   guessSubmit.disabled = true;
   resetButton = document.createElement('button');
+  resetButton.style.width = "30%"
+  resetButton.style.position = "relative"
   resetButton.textContent = 'Start new game';
-  document.body.append(resetButton);
+  document.getElementById("gameoverbutton").appendChild(resetButton)
   resetButton.addEventListener('click', resetGame);
 }
 
