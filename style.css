@@ -67,7 +67,7 @@ label {
     opacity: 0.6;
 }
 
-input[type="number"] {
+input[type="text"] {
     padding: 8px;
     border: 1px solid white;
     border-radius: 50px;
