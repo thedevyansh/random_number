@@ -1,61 +1,75 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://use.fontawesome.com/55fc7e5b7b.js"></script>
 
-  <script src="https://use.fontawesome.com/55fc7e5b7b.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-  
-<body>
-  <div class="slantedDiv">
-    <div>Welcome to Dumbledore's Game.<br /></div>
-  </div>
-
-  <div class="instruct">
-    Guess the random number! <b>Hint:</b> The random number is between 1 and
-    100 :p
-  </div>
-  <br />
-
-  <div class="instruct">
-    You've got 10 chances, kid &nbsp<i class="fa fa-magic"></i>
-  </div>
-  <br /><br />
-
-  <form action="">
-    <div class="form">
-      <label for="guessField">Enter a guess: </label>
-
-      <input type="text" id="guessField" class="guessField" />
+  <body>
+    <div class="slantedDiv">
+      <div>Welcome to Dumbledore's Game.<br /></div>
     </div>
+
+    <div class="instruct">
+      Guess the random number! <b>Hint:</b> The random number is between 1 and
+      100 :p
+    </div>
+    <br />
+
+    <div class="instruct">
+      You've got 10 chances, kid &nbsp<i class="fa fa-magic"></i>
+    </div>
+    <br /><br />
+
+    <form action="">
+      <div class="form">
+        <label for="guessField">Enter a guess: </label>
+
+        <input type="number" id="guessField" class="guessField" />
+      </div>
+      <br /><br /><br />
+
+      <div class="form">
+        <input type="submit" value="Submit" class="guessSubmit" />
+      </div>
+    </form>
     <br /><br /><br />
 
-    <div class="form">
-      <input type="submit" value="Submit" class="guessSubmit" />
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
     </div>
-  </form>
-  <br /><br /><br />
 
-<div class="resultParas">
-    <p class="guesses"></p>
-    <p class="lastResult"></p>
-    <p class="lowOrHi"></p>
-  </div>
+    <div
+      id="gameoverdiv"
+      style="
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    ></div>
 
-  <div id="gameoverdiv" style="width: 100%; display: flex; align-items: center; justify-content: center">
-  </div>
-
-  <script src="mechanism.js"></script>
-</body>
-
+    <script src="mechanism.js"></script>
+  </body>
 </html>
