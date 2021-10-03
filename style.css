@@ -38,9 +38,9 @@ body {
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
   color: white;
-  font-family: 'Parisienne', cursive;
+  font-family:  'Open Sans', 'Helvetica Neue', sans-serif, cursive;
 }
 
 .instruct {
@@ -52,7 +52,7 @@ body {
 }
 
 .form {
-  position: absolute;
+  
   display: block;
   left: 0;
   width: 100%;
