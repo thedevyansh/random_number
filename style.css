@@ -1,9 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&display=swap');
+
 html,
 body {
     height: 100%;
     margin: 0;
     overflow-x: hidden;
     background: #20011e;
+}
+
+body {   /* Added a more appealing background */
+    background-image: url("https://image.freepik.com/free-vector/retro-numbers-background_1085-172.jpg");
+}
+
+.heading {  /* Changed font of heading */
+    font-family: 'Dancing Script', cursive !important;
+}
+
+.instruct {  
+    display: block;
+    text-align: center;
+    color: #ffe9d6;
+    font-family: 'Raleway', sans-serif;
 }
 
 .slantedDiv {
