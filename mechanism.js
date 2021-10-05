@@ -18,7 +18,7 @@ function checkGuess(e) {
     guesses.textContent = 'Previous guesses: ';
   }
 
-  guesses.textContent += userGuess + ' ';
+  guesses.textContent += userGuess + ', ';
 
   if (userGuess === randomNumber) {
     lastResult.textContent = 'Congratulations!';
