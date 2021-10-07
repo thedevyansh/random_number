@@ -32,6 +32,7 @@ element.style {  /* Result box more visible */
     text-align: center;
     color: #ffe9d6;
     font-family: 'Raleway', sans-serif;
+    padding: 0em 3em;
 }
 
 .slantedDiv {
@@ -39,6 +40,9 @@ element.style {  /* Result box more visible */
     width: 100%;
     min-height: 150px;
     background: #24152f;
+    background-image: url('./assets/stars.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 20px;
     opacity: 0.9;
     margin-bottom: 11%;
@@ -73,33 +77,35 @@ element.style {  /* Result box more visible */
 
 
 
-.form {
-    position: absolute;
-    display: block;
-    left: 0;
-    width: 100%;
-    text-align: center;
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 label {
     font-family: 'Parisienne', cursive;
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     opacity: 0.6;
 }
 
 input[type='number'] {
-    padding: 8px;
+    padding: .5em;
     border: 1px solid white;
     border-radius: 50px;
     background-color: #20011e;
     color: #c7c6c1;
     font-family: 'Raleway', sans-serif;
+    margin: 1em 0em;
+    font-size: 20px;
+    text-align: center;
 }
 
 input[type='submit'],
 button {
-    padding: 5px 30px;
+    padding: 1em 5em;
     border: 1px solid white;
     border-radius: 60px;
     background-color: #20011e;
@@ -125,7 +131,6 @@ button {
     display: block;
     text-align: center;
 }
-
 .lastResult {
     margin: 0 auto;
     padding: 5px 30px;
@@ -146,12 +151,20 @@ button {
     text-decoration: none;
 }
 
+#gameoverdiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 420px) {
     .slantedDiv div {
         font-size: 28px;
         text-align: justify;
+        margin: 0em .8em;
     }
     .slantedDiv {
         margin-bottom: 15%;
     }
-}
+
