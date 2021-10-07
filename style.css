@@ -1,9 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&display=swap');
+
 html,
 body {
     height: 100%;
     margin: 0;
     overflow-x: hidden;
     background: #20011e;
+}
+
+body {   /* Added a more appealing background */
+    background-image: url("https://image.freepik.com/free-vector/retro-numbers-background_1085-172.jpg");
+}
+
+.heading {  /* Changed font of heading */
+    font-family: 'Dancing Script', cursive !important;
+}
+
+mark {  /* To make text visible */
+    background-color: black;
+    color: white;
+    border-radius: 3rem;
+    font-size: larger;
+}
+
+element.style {  /* Result box more visible */
+    background-color: rgb(188 85 75 / 82%);
+}
+
+.instruct {  
+    display: block;
+    text-align: center;
+    color: #ffe9d6;
+    font-family: 'Raleway', sans-serif;
+    padding: 0em 3em;
 }
 
 .slantedDiv {
@@ -46,13 +75,7 @@ body {
     font-family: 'Parisienne', cursive;
 }
 
-.instruct {
-    display: block;
-    text-align: center;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    opacity: 0.7;
-}
+
 
 form {
     display: flex;
@@ -145,7 +168,3 @@ button {
         margin-bottom: 15%;
     }
 
-    .instruct {
-        padding: 0em 3em;
-    }
-}
