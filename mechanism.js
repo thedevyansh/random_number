@@ -13,7 +13,6 @@ let resetButton;
 function checkGuess(e) {
   e.preventDefault();
   let userGuess = Number(guessField.value);
-
   if (guessCount === 1) {
     guesses.textContent = 'Previous guesses: ';
   }
@@ -25,6 +24,7 @@ function checkGuess(e) {
     lastResult.style.backgroundColor = 'rgb(157,193,131)';
     lastResult.style.color = 'black';
     lowOrHi.textContent = '';
+    document.getElementById('congrats-confetti').style.display='block';
     setGameOver();
   } else if (guessCount === 10) {
     lastResult.textContent = '!!!GAME OVER!!!';
@@ -75,4 +75,5 @@ function resetGame() {
   lastResult.style.backgroundColor = '#20011E';
 
   randomNumber = Math.floor(Math.random() * 100) + 1;
+  document.getElementById('congrats-confetti').style.display='none';
 }
