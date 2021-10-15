@@ -13,6 +13,13 @@ let resetButton;
 function checkGuess(e) {
   e.preventDefault();
   let userGuess = Number(guessField.value);
+
+  /* Prevent empty guess field entry */
+  if (guessField.value === ""){
+    alert("Please enter a Number");
+    return;
+  } /*End empty field prevention */
+
   if (guessCount === 1) {
     guesses.textContent = 'Previous guesses: ';
   }
