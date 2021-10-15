@@ -5,6 +5,17 @@ body {
     overflow-x: hidden;
     background: #20011e;
 }
+#congrats-confetti{
+    background: url(assets/confetti.gif);
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    display: none;
+}
 
 .slantedDiv {
     position: relative;
@@ -80,6 +91,14 @@ input[type='number'] {
     text-align: center;
 }
 
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 input[type='submit'],
 button {
     padding: 1em 5em;
@@ -89,6 +108,17 @@ button {
     color: white;
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
+}
+
+input[type='submit']:hover
+,button:hover{
+    animation: hover 15s infinite;
+}
+
+@keyframes hover{
+    0%{ background-color: rgba(44, 8, 90, 0.5);}
+    50%{ background-color: rgba(251,122,142, 0.5);}
+    100%{ background-color: rgba(44, 8, 90, 0.5);}
 }
 
 button {
@@ -115,6 +145,13 @@ button {
     letter-spacing: 5px;
     text-transform: uppercase;
     width: 30%;
+    position: relative;
+    z-index: 2 !important;
+}
+
+button{
+    position: relative;
+    z-index: 2;
 }
 
 .lowOrHi {
@@ -147,5 +184,11 @@ button {
 
     .instruct {
         padding: 0em 3em;
+    }
+    .lastResult{
+        width: 70vw;
+    }
+    #gameoverdiv>button{
+        width: 70% !important;
     }
 }
